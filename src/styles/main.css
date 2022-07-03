@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+
+body {
+    background-color: #FCAA46;
+}
+
+/* heart button */
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Skip to Content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+/* App Bar / header */
+
+.app-bar {
+    padding: 8px 16px;
+    background-color: #2e5180;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .app-bar__brand h1 {
+    color: #ffc107;
+    text-transform: uppercase;
+    font-size: 22px;
+    user-select: none;
+}
+
+.app-bar .app-bar__navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #2e5180;
+}
+
+.app-bar .app-bar__navigation.open {
+    left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffc107;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.brand h1 {
+    font-weight: 700;
+    color: white;
+}
+
+
+
+/* hero display */
+
+.hero img {
+    height: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    vertical-align: bottom;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.hero .headline {
+    flex: auto;
+    align-self: flex-end;
+    padding: 33px 0;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+/* Item */
+.resto h2 {
+    text-align: center;
+}
+
+.resto p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    object-fit: cover;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+.card-header img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card-body h3 a {
+    text-decoration: none;
+    padding: 15px;
+    height: 44px;
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.card-footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+}
+
+.tag+.tag {
+    margin-left: .5em;
+}
+
+.tag-red {
+    background: #cb2d3e;
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+}
+
+
+/* footer */
+.footer {
+    padding: 38px 0 56px;
+    background-color: #2E5180;
+}
+
+.footer .site .name {
+    margin-right: 14px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.footer .add {
+    margin: 20px 0 36px 61px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer .sns {
+    display: flex;
+    list-style: none;
+}
+
+.footer .sns li:not(:first-child) {
+    margin-left: 25px;
+}
+
+.footer .sns img {
+    width: 44px;
+    height: 44px;
+
+}
+
+.footer .sns li a {
+    padding: 20px
+}
+
+/* Responsif untuk Nav */
+
+/* Navigation Menu on Desktop */
+@media screen and (max-width: 899px) {
+
+    html.open,
+    .open body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .header {
+        position: relative;
+    }
+
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* hero image */
+    .hero img {
+        width: 100%;
+        height: 400px;
+    }
+
+
+    .card-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        font-size: 16px;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-image {
+        width: 125px;
+        height: 125px;
+    }
+
+    .card-header img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .resto p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: justify;
+        font-size: 1rem;
+        padding-right: 1.5em;
+    }
+}
+
+/* Navigation Menu on Mobile */
+@media screen and (min-width: 900px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .app-bar .app-bar__brand h1 {
+        font-size: 1.5em;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .card-header img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    /* add item here */
+    .hero img {
+        width: 100%;
+        height: 400px;
+    }
+
+
+    .container {
+        width: 91%;
+        max-width: 1240px;
+    }
+
+    /* resto */
+    .resto {
+        padding: 95px 0 87px;
+    }
+
+    .resto h2 {
+        font-size: 36px;
+    }
+
+    #item {
+        display: flex;
+        margin-top: 75px;
+    }
+
+    .feature {
+        flex: 1;
+        margin-right: 3.22%;
+    }
+
+    .feature:first-child {
+        margin-left: 3.22%;
+    }
+
+    .feature:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .feature h3 {
+        margin-bottom: 26px;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .feature p {
+        width: 78%;
+        max-width: none;
+    }
+
+    .feature figure img {
+        height: 360px;
+        margin-bottom: 33px;
+    }
+
+    /* footer */
+
+    .footer {
+        margin-top: -48px;
+        padding: 105px 0 88px;
+        object-fit: cover;
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .site .name {
+        font-size: 22px;
+    }
+
+    .footer .add {
+        margin: 22px 0 0 77px;
+    }
+
+    .footer .sns {
+        height: 59px;
+        align-items: center;
+    }
+
+    .footer .sns img {
+        width: 44px;
+        height: 44px;
+
+    }
+     
+}
+
+
+/* Responsiv untuk Footer */
+@media (max-width: 375px) {
+    .footer .add {
+        margin: 40px;
+    }
+
+    .footer .sns {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    .brand h1 {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 84%;
+        height: 100%;
+    }
+
+    .card-image {
+        height: 260px;
+    }
+
+     .resto-detail {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+}
+
+@media screen and (min-width: 280px) {
+    .resto p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+}
